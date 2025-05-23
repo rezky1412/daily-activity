@@ -23,10 +23,32 @@ php artisan migrate
 php artisan db:seed
 php artisan serve
 
-### Defaul User
+### Default User
 
 Email : ethan.sarifuddin@gmail.com
 Password : admin123
 Role : Admin
 
 Note : Aktifkan Imagick DLL sesuai versi PHP yang dipunya sebagai ekstensi tambahan generate gambar
+
+#### End Point API
+
+- Login
+
+url : http://domain-app/api/login
+body : raw dengan type json 
+example :
+{
+  "email": "ethan.sarifuddin@gmail.com",
+  "password": "admin123"
+}
+
+- Get User
+
+url : http://domain-app/api/user
+authorization : Bearer Token
+
+- Get Progres
+
+url : http://domain-app/api/progress
+authorization : Bearer Token
